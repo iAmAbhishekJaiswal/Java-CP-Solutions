@@ -1,0 +1,2 @@
+Enter a integer( 0 for terminate) : Enter a integer( 0 for terminate) : Enter a integer( 0 for terminate) : Enter a integer( 0 for terminate) : Enter a integer( 0 for terminate) : Enter a integer( 0 for terminate) : Enter a integer( 0 for terminate) : Enter a integer( 0 for terminate) : Enter a integer( 0 for terminate) : 
+Sum : 44
