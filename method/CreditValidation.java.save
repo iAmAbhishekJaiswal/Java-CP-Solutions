@@ -1,0 +1,64 @@
+import java.util.*;
+
+public class CreditValidation{
+ public static void main(String[] args){
+  Scanner input = new Scanner(System.in);
+  System.out.print("\n Enter a credit card number : ");
+  long cardNumber = input.nextLong();
+ 
+  if(isValid(cardNumber))
+  System.out.println("\n "+cardNumber+" is Valid ! ");
+  else
+  System.out.println("\n "+cardNumber+" is Invalid ! ");
+
+ }
+ public static boolean isValid(long cardNum){
+  int size = getSize(cardNum);
+
+  boolean validity;
+  if(size13 || size<=16)
+  validity = false;
+
+  if(prefixMatch(cardNum,4) || prefixMatch(cardNum,5) || prefixMatch(cardNum,6) || prefixMatch(cardNum,37))
+  validity = true;
+  else
+  validity = false;
+
+  return validity;
+ }
+/*
+ public static int sumOfDoubleEvenPlace(long num){
+
+
+
+ }
+
+ public static int getDigit(int num){
+ }
+
+ public static int sumOfOddPlace(long num){
+
+
+ }
+*/
+ public static boolean prefixMatch(long num,int n){
+  String number = num+"";
+  String prefix = n+"";
+  if(number.startsWith(prefix))
+  return true;
+  else
+  return false;
+
+ }
+
+ public static int getSize(long d){
+  int size=0;
+  while(d>0){
+  d/=10;
+  size++;
+  }
+  return size;
+ }
+
+}
+ 
